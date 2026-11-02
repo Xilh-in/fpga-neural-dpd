@@ -1,0 +1,42 @@
+{
+  "save_time": "2026-10-30T15:58:03",
+  "tx_attenuation_mdB_sent": 6000,
+  "rx_gain_note": "PS启动配置；如有调整请在此补充",
+  "capture_length_config": 16384,
+  "bypass_sample_count": 16384,
+  "dpd_sample_count": 16384,
+  "trigger_point": 0,
+  "sample_rate_hz": 122880000.0,
+  "acpr_bandwidth_hz": 20000000.0,
+  "train_iterations_config": 300,
+  "train_learning_rate_initial": 0.005,
+  "train_gamma": 0.995,
+  "model_reference_offset": 0,
+  "baseline_alignment_lag": 0,
+  "baseline_alignment_gain_real": -0.9846789983610402,
+  "baseline_alignment_gain_imag": 0.5046722360867064,
+  "baseline_acpr_left_right_db": [
+    -45.10627947941767,
+    -43.08407069763496
+  ],
+  "dpd_acpr_left_right_db": [
+    -54.39354278940273,
+    -54.02868134824946
+  ],
+  "acpr_improvement_left_right_db": [
+    9.287263309985057,
+    10.9446106506145
+  ],
+  "bypass_rx_int16_boundary": {
+    "I": 0,
+    "Q": 0
+  },
+  "dpd_rx_int16_boundary": {
+    "I": 0,
+    "Q": 0
+  },
+  "model_parameter_count": 576,
+  "bitstream_note": "请填写本次使用的 bit 文件名或路径",
+  "elf_note": "请填写本次使用的 ELF 文件名或路径",
+  "lna_note": "请填写本次 LNA 型号及供电"
+}
