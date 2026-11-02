@@ -1,0 +1,1333 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Oct 27 20:31:17 2026
+| Host         : DESKTOP-OBFHSOV running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file D:/vivado_example/dpd_2025_netlist/build/20261027_151913/timing_opt_3/timing_summary_opt_3.rpt
+| Design       : jesd204b_adc_dac_top
+| Device       : 7z100-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (2)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (2)
+-------------------------------
+ There are 2 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.137        0.000                      0               367478        0.023        0.000                      0               367478        2.069        0.000                       0                168912  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                          Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                          ------------         ----------      --------------
+clk_fpga_0                     {0.000 5.000}        10.000          100.000         
+rx_ref_clk                     {0.000 4.069}        8.138           122.880         
+tx_ref_clk                     {0.000 4.069}        8.138           122.880         
+  clk_out1_system_clk_wiz_0_0  {0.000 8.138}        16.276          61.440          
+  clk_out2_system_clk_wiz_0_0  {0.000 4.069}        8.138           122.880         
+  clkfbout_system_clk_wiz_0_0  {0.000 4.069}        8.138           122.880         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0                           0.247        0.000                      0                11873        0.070        0.000                      0                11873        4.286        0.000                       0                  3452  
+rx_ref_clk                           7.167        0.000                      0                    7        0.172        0.000                      0                    7        3.427        0.000                       0                    15  
+tx_ref_clk                                                                                                                                                                       2.069        0.000                       0                     4  
+  clk_out1_system_clk_wiz_0_0        7.160        0.000                      0                 2130        0.066        0.000                      0                 2130        7.496        0.000                       0                  1598  
+  clk_out2_system_clk_wiz_0_0        0.137        0.000                      0               353226        0.023        0.000                      0               353226        3.301        0.000                       0                163840  
+  clkfbout_system_clk_wiz_0_0                                                                                                                                                    6.729        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock                   To Clock                         WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                   --------                         -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clk_out2_system_clk_wiz_0_0  clk_out1_system_clk_wiz_0_0        6.252        0.000                      0                    9        0.141        0.000                      0                    9  
+clk_out1_system_clk_wiz_0_0  clk_out2_system_clk_wiz_0_0        4.427        0.000                      0                   51        0.108        0.000                      0                   51  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  clk_fpga_0         clk_fpga_0               0.565        0.000                      0                  224        0.405        0.000                      0                  224  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.247ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.070ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.286ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.247ns  (required time - arrival time)
+  Source:                 u_axi_lite_dpd/u_data_ctrl/rd_en_A_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_8/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.152ns  (logic 0.223ns (2.437%)  route 8.929ns (97.563%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.119ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.648ns = ( 12.648 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.889ns
+    Clock Pessimism Removal (CPR):    0.122ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.393     1.393    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.486 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        1.403     2.889    u_axi_lite_dpd/u_data_ctrl/clk_axi
+    SLICE_X104Y87        FDRE                                         r  u_axi_lite_dpd/u_data_ctrl/rd_en_A_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X104Y87        FDRE (Prop_fdre_C_Q)         0.223     3.112 r  u_axi_lite_dpd/u_data_ctrl/rd_en_A_reg/Q
+                         net (fo=33, routed)          8.929    12.041    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/rd_en
+    RAMB36_X10Y22        RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_8/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.294    11.294    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    11.377 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        1.271    12.648    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/clk_rd
+    RAMB36_X10Y22        RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_8/CLKBWRCLK
+                         clock pessimism              0.122    12.770    
+                         clock uncertainty           -0.154    12.615    
+    RAMB36_X10Y22        RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.328    12.287    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_8
+  -------------------------------------------------------------------
+                         required time                         12.287    
+                         arrival time                         -12.041    
+  -------------------------------------------------------------------
+                         slack                                  0.247    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.070ns  (arrival time - required time)
+  Source:                 u_axi_lite_dpd/cap_rd_addr_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/data_mem_reg_0_16/ADDRBWRADDR[1]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.481ns  (logic 0.100ns (20.788%)  route 0.381ns (79.212%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.228ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.692ns
+    Source Clock Delay      (SCD):    1.387ns
+    Clock Pessimism Removal (CPR):    0.077ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.763     0.763    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.789 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        0.598     1.387    u_axi_lite_dpd/axi_gp_clk
+    SLICE_X111Y91        FDCE                                         r  u_axi_lite_dpd/cap_rd_addr_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y91        FDCE (Prop_fdce_C_Q)         0.100     1.487 r  u_axi_lite_dpd/cap_rd_addr_reg[1]/Q
+                         net (fo=257, routed)         0.381     1.868    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/addrb[1]
+    RAMB36_X5Y18         RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/data_mem_reg_0_16/ADDRBWRADDR[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.808     0.808    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     0.838 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        0.854     1.692    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/clk_rd
+    RAMB36_X5Y18         RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/data_mem_reg_0_16/CLKBWRCLK
+                         clock pessimism             -0.077     1.615    
+    RAMB36_X5Y18         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[1])
+                                                      0.183     1.798    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_G/data_mem_reg_0_16
+  -------------------------------------------------------------------
+                         required time                         -1.798    
+                         arrival time                           1.868    
+  -------------------------------------------------------------------
+                         slack                                  0.070    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin               Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location            Pin
+Min Period        n/a     GTXE2_CHANNEL/DRPCLK  n/a            5.714         10.000      4.286      GTXE2_CHANNEL_X0Y1  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/gt0_system_jesd204_phy_0_0_gt_i/gtxe2_i/DRPCLK
+Low Pulse Width   Slow    SRL16E/CLK            n/a            0.642         5.000       4.358      SLICE_X174Y82       system_wrapper_inst/system_i/rst_ps7_0_100M/U0/EXT_LPF/POR_SRL_I/CLK
+High Pulse Width  Slow    SRL16E/CLK            n/a            0.642         5.000       4.358      SLICE_X174Y82       system_wrapper_inst/system_i/rst_ps7_0_100M/U0/EXT_LPF/POR_SRL_I/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  rx_ref_clk
+  To Clock:  rx_ref_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.167ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.172ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.427ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.167ns  (required time - arrival time)
+  Source:                 system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[94]_srl31/CLK
+                            (rising edge-triggered cell SRLC32E clocked by rx_ref_clk  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[95]/D
+                            (rising edge-triggered cell FDRE clocked by rx_ref_clk  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             rx_ref_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.138ns  (rx_ref_clk rise@8.138ns - rx_ref_clk rise@0.000ns)
+  Data Path Delay:        1.000ns  (logic 1.000ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.643ns = ( 10.781 - 8.138 ) 
+    Source Clock Delay      (SCD):    3.722ns
+    Clock Pessimism Removal (CPR):    1.079ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock rx_ref_clk rise edge)
+                                                      0.000     0.000 r  
+    AA8                                               0.000     0.000 r  cpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    cpll_refclk_p
+    AA8                  IBUF (Prop_ibuf_I_O)         0.000     0.000 r  cpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    cpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y2     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      2.355     2.355 r  i_ibufds_ref_clk0/O
+                         net (fo=5, routed)           0.665     3.020    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/gt0_gtrefclk0_in
+    BUFHCE_X0Y12         BUFH (Prop_bufh_I_O)         0.103     3.123 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf/O
+                         net (fo=9, routed)           0.599     3.722    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf_n_0
+    SLICE_X102Y50        SRLC32E                                      r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[94]_srl31/CLK
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y50        SRLC32E (Prop_srlc32e_CLK_Q)
+                                                      1.000     4.722 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[94]_srl31/Q
+                         net (fo=1, routed)           0.000     4.722    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[94]_srl31_n_0
+    SLICE_X102Y50        FDRE                                         r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[95]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock rx_ref_clk rise edge)
+                                                      8.138     8.138 r  
+    AA8                                               0.000     8.138 r  cpll_refclk_p (IN)
+                         net (fo=0)                   0.000     8.138    cpll_refclk_p
+    AA8                  IBUF (Prop_ibuf_I_O)         0.000     8.138 r  cpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     8.138    cpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y2     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      1.418     9.556 r  i_ibufds_ref_clk0/O
+                         net (fo=5, routed)           0.606    10.162    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/gt0_gtrefclk0_in
+    BUFHCE_X0Y12         BUFH (Prop_bufh_I_O)         0.066    10.228 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf/O
+                         net (fo=9, routed)           0.553    10.781    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf_n_0
+    SLICE_X102Y50        FDRE                                         r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[95]/C
+                         clock pessimism              1.079    11.860    
+                         clock uncertainty           -0.035    11.825    
+    SLICE_X102Y50        FDRE (Setup_fdre_C_D)        0.064    11.889    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[95]
+  -------------------------------------------------------------------
+                         required time                         11.889    
+                         arrival time                          -4.722    
+  -------------------------------------------------------------------
+                         slack                                  7.167    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.172ns  (arrival time - required time)
+  Source:                 system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32/CLK
+                            (rising edge-triggered cell SRLC32E clocked by rx_ref_clk  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[63]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by rx_ref_clk  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             rx_ref_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (rx_ref_clk rise@0.000ns - rx_ref_clk rise@0.000ns)
+  Data Path Delay:        0.271ns  (logic 0.271ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.440ns
+    Source Clock Delay      (SCD):    0.942ns
+    Clock Pessimism Removal (CPR):    0.498ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock rx_ref_clk rise edge)
+                                                      0.000     0.000 r  
+    AA8                                               0.000     0.000 r  cpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    cpll_refclk_p
+    AA8                  IBUF (Prop_ibuf_I_O)         0.000     0.000 r  cpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    cpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y2     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.441     0.441 r  i_ibufds_ref_clk0/O
+                         net (fo=5, routed)           0.189     0.630    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/gt0_gtrefclk0_in
+    BUFHCE_X0Y12         BUFH (Prop_bufh_I_O)         0.023     0.653 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf/O
+                         net (fo=9, routed)           0.289     0.942    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf_n_0
+    SLICE_X102Y50        SRLC32E                                      r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32/CLK
+  -------------------------------------------------------------------    -------------------
+    SLICE_X102Y50        SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.271     1.213 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32/Q31
+                         net (fo=1, routed)           0.000     1.213    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32_n_1
+    SLICE_X102Y50        SRLC32E                                      r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[63]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock rx_ref_clk rise edge)
+                                                      0.000     0.000 r  
+    AA8                                               0.000     0.000 r  cpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    cpll_refclk_p
+    AA8                  IBUF (Prop_ibuf_I_O)         0.000     0.000 r  cpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    cpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y2     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.732     0.732 r  i_ibufds_ref_clk0/O
+                         net (fo=5, routed)           0.221     0.953    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/gt0_gtrefclk0_in
+    BUFHCE_X0Y12         BUFH (Prop_bufh_I_O)         0.045     0.998 r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf/O
+                         net (fo=9, routed)           0.442     1.440    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/refclk_buf_n_0
+    SLICE_X102Y50        SRLC32E                                      r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[63]_srl32/CLK
+                         clock pessimism             -0.498     0.942    
+    SLICE_X102Y50        SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.099     1.041    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[63]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.041    
+                         arrival time                           1.213    
+  -------------------------------------------------------------------
+                         slack                                  0.172    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         rx_ref_clk
+Waveform(ns):       { 0.000 4.069 }
+Period(ns):         8.138
+Sources:            { cpll_refclk_p }
+
+Check Type        Corner  Lib Pin                  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location            Pin
+Min Period        n/a     GTXE2_CHANNEL/GTREFCLK0  n/a            1.538         8.138       6.600      GTXE2_CHANNEL_X0Y1  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/gt0_system_jesd204_phy_0_0_gt_i/gtxe2_i/GTREFCLK0
+Low Pulse Width   Slow    SRLC32E/CLK              n/a            0.642         4.069       3.427      SLICE_X102Y50       system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK              n/a            0.642         4.069       3.427      SLICE_X102Y50       system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/cpll_railing0_i/cpllpd_wait_reg[31]_srl32/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  tx_ref_clk
+  To Clock:  tx_ref_clk
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        2.069ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         tx_ref_clk
+Waveform(ns):       { 0.000 4.069 }
+Period(ns):         8.138
+Sources:            { qpll_refclk_p }
+
+Check Type        Corner  Lib Pin                 Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location           Pin
+Min Period        n/a     GTXE2_COMMON/GTREFCLK0  n/a            1.493         8.138       6.645      GTXE2_COMMON_X0Y0  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_gt_common_i/jesd204_0_common/gtxe2_common_i/GTREFCLK0
+Max Period        n/a     MMCME2_ADV/CLKIN1       n/a            100.000       8.138       91.862     MMCME2_ADV_X0Y2    system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1       n/a            2.000         4.069       2.069      MMCME2_ADV_X0Y2    system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1       n/a            2.000         4.069       2.069      MMCME2_ADV_X0Y2    system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_system_clk_wiz_0_0
+  To Clock:  clk_out1_system_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.160ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.066ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        7.496ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.160ns  (required time - arrival time)
+  Source:                 system_wrapper_inst/system_i/jesd204_tx/inst/tx_sysref_r_reg/C
+                            (falling edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Destination:            jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Path Group:             clk_out1_system_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.138ns  (clk_out1_system_clk_wiz_0_0 rise@16.276ns - clk_out1_system_clk_wiz_0_0 fall@8.138ns)
+  Data Path Delay:        0.862ns  (logic 0.228ns (26.439%)  route 0.634ns (73.561%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.584ns = ( 20.860 - 16.276 ) 
+    Source Clock Delay      (SCD):    5.750ns = ( 13.888 - 8.138 ) 
+    Clock Pessimism Removal (CPR):    1.109ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_system_clk_wiz_0_0 fall edge)
+                                                      8.138     8.138 f  
+    AD10                                              0.000     8.138 f  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     8.138    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     8.138 f  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     8.138    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      2.355    10.493 f  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.637    12.130    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093    12.223 f  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.505    13.728    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.147    10.581 f  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.549    12.130    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093    12.223 f  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        1.665    13.888    system_wrapper_inst/system_i/jesd204_tx/inst/tx_core_clk
+    SLICE_X171Y39        FDRE                                         r  system_wrapper_inst/system_i/jesd204_tx/inst/tx_sysref_r_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X171Y39        FDRE (Prop_fdre_C_Q)         0.228    14.116 r  system_wrapper_inst/system_i/jesd204_tx/inst/tx_sysref_r_reg/Q
+                         net (fo=1, routed)           0.634    14.751    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+    SLICE_X172Y28        FDRE                                         r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                     16.276    16.276 r  
+    AD10                                              0.000    16.276 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000    16.276    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000    16.276 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000    16.276    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      1.418    17.694 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.565    19.259    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083    19.342 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.347    20.689    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.861    17.828 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.431    19.259    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083    19.342 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        1.518    20.860    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+    SLICE_X172Y28        FDRE                                         r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                         clock pessimism              1.109    21.969    
+                         clock uncertainty           -0.077    21.892    
+    SLICE_X172Y28        FDRE (Setup_fdre_C_D)        0.018    21.910    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         21.910    
+                         arrival time                         -14.751    
+  -------------------------------------------------------------------
+                         slack                                  7.160    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.066ns  (arrival time - required time)
+  Source:                 jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Destination:            jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRL16E clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Path Group:             clk_out1_system_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_system_clk_wiz_0_0 rise@0.000ns - clk_out1_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.194ns  (logic 0.091ns (46.864%)  route 0.103ns (53.136%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.511ns
+    Source Clock Delay      (SCD):    1.933ns
+    Clock Pessimism Removal (CPR):    0.566ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.441     0.441 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.761     1.202    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.026     1.228 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.655     1.883    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.300     0.583 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.619     1.202    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     1.228 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        0.705     1.933    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+    SLICE_X183Y18        FDRE                                         r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X183Y18        FDRE (Prop_fdre_C_Q)         0.091     2.024 r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.103     2.128    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+    SLICE_X184Y18        SRL16E                                       r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.732     0.732 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.804     1.536    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.030     1.566 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.867     2.433    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.586     0.847 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.689     1.536    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.030     1.566 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        0.945     2.511    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+    SLICE_X184Y18        SRL16E                                       r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+                         clock pessimism             -0.566     1.945    
+    SLICE_X184Y18        SRL16E (Hold_srl16e_CLK_D)
+                                                      0.116     2.061    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.061    
+                         arrival time                           2.128    
+  -------------------------------------------------------------------
+                         slack                                  0.066    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_system_clk_wiz_0_0
+Waveform(ns):       { 0.000 8.138 }
+Period(ns):         16.276
+Sources:            { system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin                 Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location            Pin
+Min Period        n/a     GTXE2_CHANNEL/TXUSRCLK  n/a            3.875         16.276      12.401     GTXE2_CHANNEL_X0Y1  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/gt0_system_jesd204_phy_0_0_gt_i/gtxe2_i/TXUSRCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0      n/a            213.360       16.276      197.084    MMCME2_ADV_X0Y2     system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    SRL16E/CLK              n/a            0.642         8.138       7.496      SLICE_X184Y18       jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+High Pulse Width  Slow    SRL16E/CLK              n/a            0.642         8.138       7.496      SLICE_X184Y18       jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>/<hidden>
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_system_clk_wiz_0_0
+  To Clock:  clk_out2_system_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.137ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.023ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.301ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.137ns  (required time - arrival time)
+  Source:                 u_axi_lite_dpd/u_data_ctrl/cap_A_addr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_15/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             clk_out2_system_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.138ns  (clk_out2_system_clk_wiz_0_0 rise@8.138ns - clk_out2_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        7.330ns  (logic 0.223ns (3.042%)  route 7.107ns (96.958%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.185ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.269ns = ( 12.407 - 8.138 ) 
+    Source Clock Delay      (SCD):    5.486ns
+    Clock Pessimism Removal (CPR):    1.032ns
+  Clock Uncertainty:      0.070ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.120ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      2.355     2.355 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.637     3.992    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093     4.085 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.505     5.590    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.147     2.443 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.549     3.992    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093     4.085 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      1.401     5.486    u_axi_lite_dpd/u_data_ctrl/clk_ad9371
+    SLICE_X105Y87        FDRE                                         r  u_axi_lite_dpd/u_data_ctrl/cap_A_addr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y87        FDRE (Prop_fdre_C_Q)         0.223     5.709 r  u_axi_lite_dpd/u_data_ctrl/cap_A_addr_reg[4]/Q
+                         net (fo=34, routed)          7.107    12.816    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/addra[4]
+    RAMB36_X4Y29         RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_15/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      8.138     8.138 r  
+    AD10                                              0.000     8.138 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     8.138    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     8.138 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     8.138    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      1.418     9.556 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.565    11.121    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083    11.204 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.347    12.551    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.861     9.690 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.431    11.121    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    11.204 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      1.203    12.407    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/clk_wr
+    RAMB36_X4Y29         RAMB36E1                                     r  u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_15/CLKARDCLK
+                         clock pessimism              1.032    13.439    
+                         clock uncertainty           -0.070    13.369    
+    RAMB36_X4Y29         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.416    12.953    u_axi_lite_dpd/u_data_ctrl/u_dp_ram_A/data_mem_reg_0_15
+  -------------------------------------------------------------------
+                         required time                         12.953    
+                         arrival time                         -12.816    
+  -------------------------------------------------------------------
+                         slack                                  0.137    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.023ns  (arrival time - required time)
+  Source:                 u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[7][0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[8][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             clk_out2_system_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_system_clk_wiz_0_0 rise@0.000ns - clk_out2_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.255ns  (logic 0.118ns (46.337%)  route 0.137ns (53.663%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.194ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.399ns
+    Source Clock Delay      (SCD):    1.867ns
+    Clock Pessimism Removal (CPR):    0.338ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.441     0.441 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.761     1.202    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.026     1.228 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.655     1.883    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.300     0.583 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.619     1.202    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.228 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      0.639     1.867    u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/clk
+    SLICE_X200Y149       FDRE                                         r  u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[7][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X200Y149       FDRE (Prop_fdre_C_Q)         0.118     1.985 r  u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[7][0]/Q
+                         net (fo=1, routed)           0.137     2.122    u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[7][0]
+    SLICE_X200Y150       FDRE                                         r  u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[8][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.732     0.732 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.804     1.536    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.030     1.566 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.867     2.433    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.586     0.847 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.689     1.536    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.566 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      0.833     2.399    u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/clk
+    SLICE_X200Y150       FDRE                                         r  u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[8][0]/C
+                         clock pessimism             -0.338     2.061    
+    SLICE_X200Y150       FDRE (Hold_fdre_C_D)         0.038     2.099    u_axi_lite_dpd/u_data_ctrl/u_dpd_top/u_ExpCNN/u_NonLinear_layer/u_NL_core_0/get_exp_out[0].u_cordic_exp/din_mod_d_reg[8][0]
+  -------------------------------------------------------------------
+                         required time                         -2.099    
+                         arrival time                           2.122    
+  -------------------------------------------------------------------
+                         slack                                  0.023    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_system_clk_wiz_0_0
+Waveform(ns):       { 0.000 4.069 }
+Period(ns):         8.138
+Sources:            { system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin                 Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location            Pin
+Min Period        n/a     GTXE2_CHANNEL/RXUSRCLK  n/a            3.875         8.138       4.263      GTXE2_CHANNEL_X0Y1  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/system_jesd204_phy_0_0_gt/inst/system_jesd204_phy_0_0_gt_i/gt0_system_jesd204_phy_0_0_gt_i/gtxe2_i/RXUSRCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT1      n/a            213.360       8.138       205.222    MMCME2_ADV_X0Y2     system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Slow    RAMD64E/CLK             n/a            0.768         4.069       3.301      SLICE_X166Y42       jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_1/system_jesd204_0_1_block/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+High Pulse Width  Slow    RAMD64E/CLK             n/a            0.768         4.069       3.301      SLICE_X166Y42       jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_1/system_jesd204_0_1_block/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_system_clk_wiz_0_0
+  To Clock:  clkfbout_system_clk_wiz_0_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        6.729ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_system_clk_wiz_0_0
+Waveform(ns):       { 0.000 4.069 }
+Period(ns):         8.138
+Sources:            { system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            1.408         8.138       6.729      BUFGCTRL_X0Y4    system_wrapper_inst/system_i/clk_wiz_0/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       8.138       91.862     MMCME2_ADV_X0Y2  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_system_clk_wiz_0_0
+  To Clock:  clk_out1_system_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        6.252ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.141ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             6.252ns  (required time - arrival time)
+  Source:                 jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Path Group:             clk_out1_system_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.138ns  (clk_out1_system_clk_wiz_0_0 rise@16.276ns - clk_out2_system_clk_wiz_0_0 rise@8.138ns)
+  Data Path Delay:        1.448ns  (logic 0.223ns (15.403%)  route 1.225ns (84.597%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.264ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.592ns = ( 20.868 - 16.276 ) 
+    Source Clock Delay      (SCD):    5.747ns = ( 13.885 - 8.138 ) 
+    Clock Pessimism Removal (CPR):    0.891ns
+  Clock Uncertainty:      0.197ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      8.138     8.138 r  
+    AD10                                              0.000     8.138 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     8.138    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     8.138 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     8.138    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      2.355    10.493 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.637    12.130    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093    12.223 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.505    13.728    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.147    10.581 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.549    12.130    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    12.223 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      1.662    13.885    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X183Y19        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X183Y19        FDRE (Prop_fdre_C_Q)         0.223    14.108 r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           1.225    15.333    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X182Y18        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                     16.276    16.276 r  
+    AD10                                              0.000    16.276 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000    16.276    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000    16.276 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000    16.276    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      1.418    17.694 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.565    19.259    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083    19.342 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.347    20.689    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.861    17.828 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.431    19.259    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083    19.342 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        1.526    20.868    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X182Y18        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.891    21.759    
+                         clock uncertainty           -0.197    21.562    
+    SLICE_X182Y18        FDRE (Setup_fdre_C_D)        0.023    21.585    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         21.585    
+                         arrival time                         -15.333    
+  -------------------------------------------------------------------
+                         slack                                  6.252    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.141ns  (arrival time - required time)
+  Source:                 jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Destination:            jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Path Group:             clk_out1_system_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_system_clk_wiz_0_0 rise@0.000ns - clk_out2_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.673ns  (logic 0.091ns (13.520%)  route 0.582ns (86.480%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.314ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.509ns
+    Source Clock Delay      (SCD):    1.931ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.197ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.441     0.441 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.761     1.202    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.026     1.228 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.655     1.883    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.300     0.583 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.619     1.202    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.228 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      0.703     1.931    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X183Y20        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X183Y20        FDRE (Prop_fdre_C_Q)         0.091     2.022 r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.582     2.605    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X182Y20        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.732     0.732 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.804     1.536    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.030     1.566 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.867     2.433    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.586     0.847 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.689     1.536    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.030     1.566 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        0.943     2.509    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X182Y20        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism             -0.264     2.245    
+                         clock uncertainty            0.197     2.443    
+    SLICE_X182Y20        FDRE (Hold_fdre_C_D)         0.021     2.464    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.464    
+                         arrival time                           2.605    
+  -------------------------------------------------------------------
+                         slack                                  0.141    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_system_clk_wiz_0_0
+  To Clock:  clk_out2_system_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.427ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.108ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.427ns  (required time - arrival time)
+  Source:                 jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Destination:            jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             clk_out2_system_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.138ns  (clk_out2_system_clk_wiz_0_0 rise@8.138ns - clk_out1_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        2.921ns  (logic 0.403ns (13.797%)  route 2.518ns (86.203%))
+  Logic Levels:           2  (LUT2=2)
+  Clock Path Skew:        -0.189ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.661ns = ( 12.799 - 8.138 ) 
+    Source Clock Delay      (SCD):    5.741ns
+    Clock Pessimism Removal (CPR):    0.891ns
+  Clock Uncertainty:      0.197ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      2.355     2.355 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.637     3.992    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093     4.085 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.505     5.590    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.147     2.443 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.549     3.992    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     4.085 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        1.656     5.741    jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>
+    SLICE_X172Y20        FDRE                                         r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X172Y20        FDRE (Prop_fdre_C_Q)         0.236     5.977 r  jesd204b_adc_dac_top/system_wrapper/system/system_jesd204_0_0/system_jesd204_0_0_block/<hidden>/<hidden>
+                         net (fo=2, routed)           0.585     6.563    inst_jesd204_transport_layer/txready
+    SLICE_X176Y19        LUT2 (Prop_lut2_I0_O)        0.124     6.687 r  inst_jesd204_transport_layer/txdatafifo64to128_inst_i_1/O
+                         net (fo=2, routed)           0.456     7.143    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X176Y19        LUT2 (Prop_lut2_I0_O)        0.043     7.186 r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=48, routed)          1.476     8.662    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    RAMB36_X9Y5          RAMB36E1                                     r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      8.138     8.138 r  
+    AD10                                              0.000     8.138 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     8.138    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     8.138 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     8.138    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      1.418     9.556 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           1.565    11.121    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083    11.204 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           1.347    12.551    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -2.861     9.690 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.431    11.121    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083    11.204 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      1.595    12.799    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    RAMB36_X9Y5          RAMB36E1                                     r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.891    13.690    
+                         clock uncertainty           -0.197    13.493    
+    RAMB36_X9Y5          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_WEBWE[0])
+                                                     -0.404    13.089    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         13.089    
+                         arrival time                          -8.662    
+  -------------------------------------------------------------------
+                         slack                                  4.427    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.108ns  (arrival time - required time)
+  Source:                 jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out1_system_clk_wiz_0_0  {rise@0.000ns fall@8.138ns period=16.276ns})
+  Destination:            jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell FDRE clocked by clk_out2_system_clk_wiz_0_0  {rise@0.000ns fall@4.069ns period=8.138ns})
+  Path Group:             clk_out2_system_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_system_clk_wiz_0_0 rise@0.000ns - clk_out1_system_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.651ns  (logic 0.118ns (18.128%)  route 0.533ns (81.872%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.314ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.510ns
+    Source Clock Delay      (SCD):    1.932ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.197ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.441     0.441 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.761     1.202    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.026     1.228 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.655     1.883    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.300     0.583 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.619     1.202    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out1_system_clk_wiz_0_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     1.228 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=1596, routed)        0.704     1.932    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X178Y18        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X178Y18        FDRE (Prop_fdre_C_Q)         0.118     2.050 r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.533     2.583    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X177Y18        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_system_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    AD10                                              0.000     0.000 r  qpll_refclk_p (IN)
+                         net (fo=0)                   0.000     0.000    qpll_refclk_p
+    AD10                 IBUF (Prop_ibuf_I_O)         0.000     0.000 r  qpll_refclk_p_IBUF_inst/O
+                         net (fo=1, routed)           0.000     0.000    qpll_refclk_p_IBUF
+    IBUFDS_GTE2_X0Y0     IBUFDS_GTE2 (Prop_ibufds_gte2_I_O)
+                                                      0.732     0.732 r  i_ibufds_ref_clk1/O
+                         net (fo=2, routed)           0.804     1.536    qpll_refclk
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.030     1.566 r  i_bufg_ref_clk/O
+                         net (fo=1, routed)           0.867     2.433    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X0Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.586     0.847 r  system_wrapper_inst/system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.689     1.536    system_wrapper_inst/system_i/clk_wiz_0/inst/clk_out2_system_clk_wiz_0_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.566 r  system_wrapper_inst/system_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=164048, routed)      0.944     2.510    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X177Y18        FDRE                                         r  jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism             -0.264     2.246    
+                         clock uncertainty            0.197     2.444    
+    SLICE_X177Y18        FDRE (Hold_fdre_C_D)         0.032     2.476    jesd204b_adc_dac_top/jesd204_transport_layer/txdatafifo64to128/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.476    
+                         arrival time                           2.583    
+  -------------------------------------------------------------------
+                         slack                                  0.108    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.565ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.405ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.565ns  (required time - arrival time)
+  Source:                 system_wrapper_inst/system_i/smartconnect_0/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+                            (recovery check against rising-edge clock clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.014ns  (logic 0.266ns (2.951%)  route 8.748ns (97.049%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.080ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.793ns = ( 12.793 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.982ns
+    Clock Pessimism Removal (CPR):    0.109ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.393     1.393    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.486 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        1.496     2.982    system_wrapper_inst/system_i/smartconnect_0/inst/clk_map/psr_aclk/U0/aclk
+    SLICE_X179Y64        FDRE                                         r  system_wrapper_inst/system_i/smartconnect_0/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X179Y64        FDRE (Prop_fdre_C_Q)         0.223     3.205 r  system_wrapper_inst/system_i/smartconnect_0/inst/clk_map/psr_aclk/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
+                         net (fo=49, routed)          8.368    11.573    jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+    SLICE_X0Y248         LUT1 (Prop_lut1_I0_O)        0.043    11.616 f  jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+                         net (fo=3, routed)           0.380    11.996    jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+    SLICE_X0Y248         FDCE                                         f  jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.294    11.294    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    11.377 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        1.416    12.793    jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+    SLICE_X0Y248         FDCE                                         r  jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+                         clock pessimism              0.109    12.902    
+                         clock uncertainty           -0.154    12.748    
+    SLICE_X0Y248         FDCE (Recov_fdce_C_CLR)     -0.187    12.561    jesd204b_adc_dac_top/system_wrapper/system/system_smartconnect_0_0/system_smartconnect_0_0_bd_919a/system_smartconnect_0_0_s00_entry_pipeline_imp_1KR8Y8Q/system_smartconnect_0_0_bd_919a_s00tr_0/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                         12.561    
+                         arrival time                         -11.996    
+  -------------------------------------------------------------------
+                         slack                                  0.565    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.405ns  (arrival time - required time)
+  Source:                 system_wrapper_inst/system_i/jesd204_tx/inst/i_system_jesd204_0_0_reset_block/stretch_reg[10]/C
+                            (rising edge-triggered cell FDPE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/PRE
+                            (removal check against rising-edge clock clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.368ns  (logic 0.118ns (32.084%)  route 0.250ns (67.916%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.787ns
+    Source Clock Delay      (SCD):    1.495ns
+    Clock Pessimism Removal (CPR):    0.257ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.763     0.763    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.789 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        0.706     1.495    system_wrapper_inst/system_i/jesd204_tx/inst/i_system_jesd204_0_0_reset_block/s_axi_aclk
+    SLICE_X174Y33        FDPE                                         r  system_wrapper_inst/system_i/jesd204_tx/inst/i_system_jesd204_0_0_reset_block/stretch_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X174Y33        FDPE (Prop_fdpe_C_Q)         0.118     1.613 f  system_wrapper_inst/system_i/jesd204_tx/inst/i_system_jesd204_0_0_reset_block/stretch_reg[10]/Q
+                         net (fo=6, routed)           0.250     1.863    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/src_arst
+    SLICE_X176Y34        FDPE                                         f  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_wrapper_inst/system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.808     0.808    system_wrapper_inst/system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     0.838 r  system_wrapper_inst/system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3452, routed)        0.949     1.787    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/dest_clk
+    SLICE_X176Y34        FDPE                                         r  system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[0]/C
+                         clock pessimism             -0.257     1.530    
+    SLICE_X176Y34        FDPE (Remov_fdpe_C_PRE)     -0.072     1.458    system_wrapper_inst/system_i/jesd204_phy_0/inst/jesd204_phy_block_i/sync_tx_reset_data/xpm_cdc_async_rst_inst/arststages_ff_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.458    
+                         arrival time                           1.863    
+  -------------------------------------------------------------------
+                         slack                                  0.405    
+
+
+
+
+

@@ -1,0 +1,7 @@
+PATH_SIM_DIR=/workspace/scratch/c9e3f1139044/work/dpd_competition/sim/dpd_path_sim/simulation
+COEFFICIENTS_PASS 576/576
+PATH_SIM_PASS checks=18520 errors=0 captured=1024 coverage=1024
+- work/dpd_competition/sim/dpd_path_sim/tb_tx_model_path.sv:237: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 560us; walltime 1.607 s; speed 348.775 us/s
+- Verilator: cpu 1.606 s on 1 threads; allocated 8 MB

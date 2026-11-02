@@ -1,0 +1,9 @@
+{
+  "hdl_rename_only_files": 69,
+  "c_rename_only_files": 56,
+  "names_and_python_syntax": "pass",
+  "pl_input_files": 47,
+  "host_float_fixed_training_equivalence": "pass",
+  "final_vs_path_rtl": "same code tokens",
+  "failures": []
+}

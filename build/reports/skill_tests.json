@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "2026-11-01T08:37:06.395164+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": {
+    "skill_fpga-bounded-io": {
+      "status": "PASS"
+    },
+    "skill_fpga-golden-check": {
+      "status": "PASS"
+    },
+    "skill_fpga-repro-handoff": {
+      "status": "PASS"
+    },
+    "skill_zynq-baremetal-bringup": {
+      "status": "PASS"
+    },
+    "unit_tests": {
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_trailer (test_tools.BoundedTests.test_bad_trailer) ... ok\ntest_binary_lf_and_partial_io (test_tools.BoundedTests.test_binary_lf_and_partial_io) ... ok\ntest_error_ack (test_tools.BoundedTests.test_error_ack) ... ok\ntest_poll_completes (test_tools.BoundedTests.test_poll_completes) ... ok\ntest_poll_stuck_low_and_high (test_tools.BoundedTests.test_poll_stuck_low_and_high) ... ok\ntest_short_packet_invalidates_and_logs (test_tools.BoundedTests.test_short_packet_invalidates_and_logs) ... ok\ntest_write_stall (test_tools.BoundedTests.test_write_stall) ... ok\ntest_corrupted_golden_detected (test_tools.GoldenTests.test_corrupted_golden_detected) ... ok\ntest_demo_exact_with_overflow_proof (test_tools.GoldenTests.test_demo_exact_with_overflow_proof) ... ok\ntest_different_three_channel_12bit_case (test_tools.GoldenTests.test_different_three_channel_12bit_case) ... ok\ntest_endpoint_not_equated_with_overflow (test_tools.GoldenTests.test_endpoint_not_equated_with_overflow) ... ok\ntest_nan_reference_cannot_pass_library_comparison (test_tools.GoldenTests.test_nan_reference_cannot_pass_library_comparison) ... ok\ntest_nonfinite_csv_rejected (test_tools.GoldenTests.test_nonfinite_csv_rejected) ... ok\ntest_outside_window_rejected (test_tools.GoldenTests.test_outside_window_rejected) ... ok\ntest_unsigned_input_range (test_tools.GoldenTests.test_unsigned_input_range) ... ok\ntest_wrong_offset_detected (test_tools.GoldenTests.test_wrong_offset_detected) ... ok\ntest_broken_relative_dependency_fails_smoke (test_tools.HandoffTests.test_broken_relative_dependency_fails_smoke) ... ok\ntest_corruption_detected (test_tools.HandoffTests.test_corruption_detected) ... ok\ntest_fresh_extraction_demo (test_tools.HandoffTests.test_fresh_extraction_demo) ... ok\ntest_no_implicit_execution (test_tools.HandoffTests.test_no_implicit_execution) ... ok\ntest_unmanifested_code_detected (test_tools.HandoffTests.test_unmanifested_code_detected) ... ok\ntest_zip_traversal_rejected (test_tools.HandoffTests.test_zip_traversal_rejected) ... ok\ntest_default_no_download_then_explicit_download (test_tools.PynqTests.test_default_no_download_then_explicit_download) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_export_ignores_device_objects (test_tools.PynqTests.test_export_ignores_device_objects) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_invalid_contract_prevents_programming (test_tools.PynqTests.test_invalid_contract_prevents_programming) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_mapping_change_blocked (test_tools.PynqTests.test_mapping_change_blocked) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_missing_hwh_prevents_factory_call (test_tools.PynqTests.test_missing_hwh_prevents_factory_call) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_not_loaded_blocks_mmio (test_tools.PynqTests.test_not_loaded_blocks_mmio) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_offset_outside_range (test_tools.PynqTests.test_offset_outside_range) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_poll_deadline (test_tools.PynqTests.test_poll_deadline) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_ro_wo_and_read_side_effect_guard (test_tools.PynqTests.test_ro_wo_and_read_side_effect_guard) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_two_different_metadata_profiles (test_tools.PynqTests.test_two_different_metadata_profiles) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_unaligned_offset (test_tools.PynqTests.test_unaligned_offset) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_value_range_and_valid_transfer (test_tools.PynqTests.test_value_range_and_valid_transfer) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_wrong_type (test_tools.PynqTests.test_wrong_type) ... skipped 'Optional PYNQ extension is not part of the Zynq bare-metal profile'\ntest_framework_profile_mismatch_rejected (test_tools.ZynqTests.test_framework_profile_mismatch_rejected) ... ok\ntest_linux_application_rejected (test_tools.ZynqTests.test_linux_application_rejected) ... ok\ntest_missing_part_not_guessed (test_tools.ZynqTests.test_missing_part_not_guessed) ... ok\ntest_rk7100_standalone_profile (test_tools.ZynqTests.test_rk7100_standalone_profile) ... ok\ntest_second_a9_core_requires_matching_explicit_profile (test_tools.ZynqTests.test_second_a9_core_requires_matching_explicit_profile) ... ok\ntest_tutorial_z020_mismatch_rejected (test_tools.ZynqTests.test_tutorial_z020_mismatch_rejected) ... ok\ntest_wrong_processor_rejected (test_tools.ZynqTests.test_wrong_processor_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 42 tests in 0.058s\n\nOK (skipped=13)\n"
+    },
+    "golden_cli": {
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"sample_count\": 5, \"scalar_count\": 10, \"offset\": 1, \"maximum_absolute_error\": 0.0, \"mismatch_count\": 0}\n",
+      "stderr": ""
+    },
+    "bounded_cli": {
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "{\"mode\": \"MOCK ONLY\", \"payload_hex\": \"0a000080\", \"sent_hex\": \"52656164203020320a\"}\n",
+      "stderr": ""
+    },
+    "zynq_platform_cli": {
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"board_profile\": \"RK-ZYNQ7100-F\", \"part\": \"xc7z100ffg900-2\", \"processor\": \"ps7_cortexa9_0\", \"runtime\": \"standalone\", \"hardware_operations\": \"NONE\", \"scope\": \"XML/profile consistency only; no proof of board identity, constraints, DDR, XSA/ELF pairing or build success\"}\n",
+      "stderr": ""
+    },
+    "pynq_extension": {
+      "status": "SKIPPED",
+      "reason": "Current RK7100 project is standalone, not PYNQ"
+    },
+    "dpd_replay": {
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"samples\": 976, \"exact_scalars\": 1952, \"proven_saturations\": 16, \"l2_saturations\": 58}\n",
+      "stderr": ""
+    },
+    "pynq_hardware": {
+      "status": "NOT_RUN",
+      "reason": "No PYNQ board validation performed"
+    },
+    "vitis_2025_2_build": {
+      "status": "NOT_RUN",
+      "reason": "Source/metadata skill tests do not build firmware"
+    }
+  },
+  "success": true
+}
