@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "phase_cycles": {
+    "0": 1024,
+    "1": 4104,
+    "2": 1024,
+    "3": 64
+  },
+  "captured_samples": 1024,
+  "max_error_lsb": 0
+}

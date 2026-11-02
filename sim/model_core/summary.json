@@ -1,0 +1,108 @@
+{
+  "comparable_capture_indices_zero_based": [
+    23,
+    998
+  ],
+  "comparable_sample_count": 976,
+  "comparable_scalar_count": 1952,
+  "reference_input_centre_offset": 1,
+  "exact_scalar_matches": 1952,
+  "maximum_absolute_error_lsb": 0,
+  "clipping_indices_zero_based": [
+    120,
+    121,
+    348,
+    548,
+    549,
+    550,
+    551,
+    590,
+    591,
+    592,
+    593,
+    594,
+    608,
+    707,
+    708,
+    709
+  ],
+  "clipping_csv_lines_including_header": [
+    122,
+    123,
+    350,
+    550,
+    551,
+    552,
+    553,
+    592,
+    593,
+    594,
+    595,
+    596,
+    610,
+    709,
+    710,
+    711
+  ],
+  "predicted_clipping_matches": true,
+  "all_clips_q_negative": true,
+  "pointwise_final_equals_delayed_input_minus_model": true,
+  "l1_saturation_scalar_count": 0,
+  "l2_saturation_scalar_count": 58,
+  "l2_saturation_by_channel_i_q": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      18,
+      40
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "l3_saturation_by_i_q": [
+    0,
+    16
+  ],
+  "l3_before_output_clip_min_i_q": [
+    -32530.386474609375,
+    -40123.702880859375
+  ],
+  "l3_before_output_clip_max_i_q": [
+    30923.878662109375,
+    26908.238525390625
+  ],
+  "ideal_float_final_clip_count_i_q": [
+    10,
+    26
+  ],
+  "ideal_float_clipped_vs_measured_rmse_lsb": 1242.9803547914748,
+  "fixed_without_l2_clip_vs_ideal_float_rmse_lsb": 1.6491606019134877,
+  "input_hashes": {
+    "model_0216_0.json": "9c1a2bf9e0a265bea7165069ec1af3b429e587b123c9ed5ae4910cc818006964",
+    "model_out_1024.csv": "bff5389f3e178d325bf99d82b3ad199b9530d7c6f6a460d78d9b94797d6a0dce",
+    "tx_delay_1024.csv": "02be45a832f8743c2b39c538fcacc60c6dea29b71de6582091291234613e198c",
+    "tx_final_1024.csv": "355c310fcce229498b541eba4e538c825bf030e3d0e7763c5052ce6e243ad184"
+  },
+  "rtl_simulation_status": "NOT EXECUTED (rtl_trace.csv absent)",
+  "limits": "Capture history/future outside rows 0..1023 are unavailable. Only measured rows 23..998 are asserted."
+}

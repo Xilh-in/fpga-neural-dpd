@@ -1,0 +1,21 @@
+{
+  "simulator": "Verilator 5.49 (PyPI package verilator==5.48.0)",
+  "vivado_2025_2_run_by_assistant": false,
+  "positive": {
+    "status": "PASS",
+    "checks": 18520,
+    "errors": 0,
+    "coefficient_words": 576,
+    "sample_coverage": 1024,
+    "capture_samples": 1024,
+    "max_csv_error_lsb": 0
+  },
+  "negative": {
+    "rtl": "Original uploaded data_ctrl.v, without the alignment patch",
+    "status": "FAIL as expected",
+    "checks": 18520,
+    "errors": 10256
+  },
+  "baseline_zip_sha256": "4c9ad662bb50afcf5b61ef68b0a21746c9cbf5d677c0590d5740715df8b4fa9e",
+  "note": "The final TB adds explicit sign extension to CSV formatting after the negative run. Check logic is identical; positive run and independent CSV audit use final TB."
+}

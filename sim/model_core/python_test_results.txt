@@ -1,0 +1,9 @@
+test_clipping_is_actual_accumulator_overflow (test_reference.ReferenceTests.test_clipping_is_actual_accumulator_overflow) ... ok
+test_final_output_identity (test_reference.ReferenceTests.test_final_output_identity) ... ok
+test_full_valid_window_bit_exact (test_reference.ReferenceTests.test_full_valid_window_bit_exact) ... ok
+test_signed_cut_and_parameter_boundaries (test_reference.ReferenceTests.test_signed_cut_and_parameter_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.126s
+
+OK

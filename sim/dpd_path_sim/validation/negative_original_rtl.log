@@ -1,0 +1,17 @@
+PATH_SIM_DIR=/workspace/scratch/c9e3f1139044/tmp/negative_sim
+COEFFICIENTS_PASS 576/576
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15725 actual=c679beae expected=ba79c187
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15725 actual=1b39231c expected=27392043
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15726 actual=d630c087 expected=c679beae
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15726 actual=11111e6d expected=20c82046
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15727 actual=e4e1c591 expected=d630c087
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15727 actual=091117de expected=17c21ce8
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15728 actual=eff4ccd7 expected=e4e1c591
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15728 actual=046810a5 expected=0f7b17eb
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15729 actual=f671d5bd expected=eff4ccd7
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15729 actual=02bb0968 expected=0938124e
+PATH_ERROR MODEL_SAME_SAMPLE phase=1 cycle=15730 actual=f83fdeeb expected=f671d5bd
+PATH_ERROR TX_MINUS_MODEL phase=1 cycle=15730 actual=0330034f expected=04fe0c7d
+[560090000] %Fatal: tb_tx_model_path.sv:225: Assertion failed in tb_tx_model_path: PATH_SIM_FAIL errors=10256 checks=18520
+%Error: /workspace/scratch/c9e3f1139044/output/dpd_path_sim/tb_tx_model_path.sv:225: Verilog $stop
+Aborting...
