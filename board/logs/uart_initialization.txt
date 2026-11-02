@@ -1,0 +1,33 @@
+platform_init status=0
+
+AD9528_initialize successful!
+MCS successful
+CLKPLL locked
+AD9371 ARM version 5.1.1
+PLLs locked
+Calibrations completed successfully
+Number of Common Interfaces=1
+Number of Transceiver Interfaces=4
+lane_rate_khz= 2457600
+use qpll:refclk_div= 16,out_div= 2,fbdiv= 288,fbdiv_ratio= 1,lowband= 0
+lane_rate_khz= 4915200
+use cpll:refclk_div= 16,out_div= 0,fbdiv_45= 1,fbdiv= 2
+lane_rate_khz= 2457600
+use cpll:refclk_div= 16,out_div= 1,fbdiv_45= 1,fbdiv= 2
+default txpll sel=3
+default txpll sel=3
+default txpll sel=3
+default txpll sel=3
+tx_jesd_rf1 is locking!
+rx_jesd_rf1 is locking!
+orx_jesd, is locking!
+FMC_AD9371 config successful!
+change_rfpll TX freq 800000000Hz ok!
+
+tx_lo_freq=800000000Hz
+change_rfpll RX freq 800000000Hz ok!
+
+rx_lo_freq=800000000Hz
+TX attenuation verified: TX1=20000 mdB, TX2=20000 mdB
+
+RF System Initial Successful
