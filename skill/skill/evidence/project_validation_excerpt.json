@@ -1,0 +1,23 @@
+{
+  "source": "B-stage1-v2 validation_results.json",
+  "source_sha256": "8d2759e5f35cf1255498ee169daabb8a96c2dfe3caf29fa35966f8a3b63ef8a2",
+  "checks": {
+    "test_para_commands_execute": {
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "C parameter tests passed: 576 writes, LE readback, bounds, argc, staged RX timeout\n"
+    },
+    "test_blocking_timeouts_execute": {
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "Blocking tests passed: CAP_DONE high/low timeout + subsequent command, normal alignment, TX/Cyclic short/full/drip, partial command\n"
+    },
+    "arm_syntax": {
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "D:\\yaner\\learning\\dpd_final\\b_stage1\\ps_patch\\headless.c:544:2: warning: implicit declaration of function 'usleep' is invalid in C99 [-Wimplicit-function-declaration]\n        mdelay(5);\n        ^\nD:\\yaner\\learning\\dpd_final\\ps\\ps\\LNA_DPD\\drivers\\common.h:137:24: note: expanded from macro 'mdelay'\n#define mdelay(msecs)           usleep(1000*msecs)\n                                ^\n1 warning generated.\n"
+    }
+  },
+  "hardware_test": "NOT RUN",
+  "vitis_2025_2_build": "NOT RUN"
+}

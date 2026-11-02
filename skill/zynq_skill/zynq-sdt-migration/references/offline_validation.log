@@ -1,0 +1,33 @@
+Offline software validation. No board or Vitis access.
+Python 3.12.14
+
+PASS: skill entry, Markdown fences, relative references
+test_base_address_cannot_be_bus_index (test_spi_contract.SpiContractTests.test_base_address_cannot_be_bus_index) ... ok
+test_base_address_range_and_alignment (test_spi_contract.SpiContractTests.test_base_address_range_and_alignment) ... ok
+test_boolean_is_not_bus_index (test_spi_contract.SpiContractTests.test_boolean_is_not_bus_index) ... ok
+test_bsp_alias_and_no_os_header (test_spi_contract.SpiContractTests.test_bsp_alias_and_no_os_header) ... ok
+test_bsp_and_no_os_mismatches (test_spi_contract.SpiContractTests.test_bsp_and_no_os_mismatches) ... ok
+test_duplicate_base_address (test_spi_contract.SpiContractTests.test_duplicate_base_address) ... ok
+test_duplicate_logical_index (test_spi_contract.SpiContractTests.test_duplicate_logical_index) ... ok
+test_input_clock_must_be_positive (test_spi_contract.SpiContractTests.test_input_clock_must_be_positive) ... ok
+test_integer_macro_parentheses_suffix_and_comments (test_spi_contract.SpiContractTests.test_integer_macro_parentheses_suffix_and_comments) ... ok
+test_lookup_kind_tracks_bsp_mode (test_spi_contract.SpiContractTests.test_lookup_kind_tracks_bsp_mode) ... ok
+test_missing_fields_and_empty_buses (test_spi_contract.SpiContractTests.test_missing_fields_and_empty_buses) ... ok
+test_multiple_controllers (test_spi_contract.SpiContractTests.test_multiple_controllers) ... ok
+test_negative_bus_index (test_spi_contract.SpiContractTests.test_negative_bus_index) ... ok
+test_sdt_flag_must_be_boolean (test_spi_contract.SpiContractTests.test_sdt_flag_must_be_boolean) ... ok
+test_unmapped_bus (test_spi_contract.SpiContractTests.test_unmapped_bus) ... ok
+test_unsupported_and_ambiguous_macros (test_spi_contract.SpiContractTests.test_unsupported_and_ambiguous_macros) ... ok
+test_valid_sdt_mapping (test_spi_contract.SpiContractTests.test_valid_sdt_mapping) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.003s
+
+OK
+PASS: CLI spi_mapping_valid.json, expected exit 0
+PASS: CLI spi_mapping_invalid.json, expected exit 1
+PASS: CLI non_sdt_mapping_valid.json, expected exit 0
+PASS: CLI does_not_exist.json, expected exit 2
+PASS: all offline checks; no board or Vitis invocation
+
+exit_code=0

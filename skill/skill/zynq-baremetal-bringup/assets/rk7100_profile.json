@@ -1,0 +1,9 @@
+{
+  "board": "RK-ZYNQ7100-F",
+  "family": "Zynq-7000",
+  "part": "xc7z100ffg900-2",
+  "processor": "ps7_cortexa9_0",
+  "runtime": "standalone",
+  "host_location": "separate PC, Python via UART",
+  "profile_source": "Board manual pp.4-5, FPGA tutorial p.8, project XPR and application PRJ cross-check"
+}

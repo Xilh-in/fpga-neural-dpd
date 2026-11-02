@@ -1,0 +1,2 @@
+# Optional regression case only; all generic tools/tests use the Python standard library.
+numpy==1.26.4

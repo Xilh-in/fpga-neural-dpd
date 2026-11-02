@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zynq no-OS SDT 迁移"
+  short_description: "排查 Zynq 裸机 no-OS 驱动的 SDT 接口迁移与外设初始化故障"
+  default_prompt: "使用 $zynq-sdt-migration 核对当前 BSP 和 no-OS 驱动，定位初始化失败并给出最小适配修改。"

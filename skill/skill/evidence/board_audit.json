@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "board": "RK-ZYNQ7100-F",
+  "part": "xc7z100ffg900-2",
+  "cpu": "Cortex-A9 / ps7_cortexa9_0",
+  "runtime": "standalone",
+  "python_location": "host PC via UART",
+  "pynq_used_by_current_project": false,
+  "sources": {
+    "board_manual": {
+      "filename": "RK-ZYNQ7100-F V1.0 开发板用户手册.pdf",
+      "sha256": "c2dffecd3d805dc252577154794194357fb6c4dac52dd891ef1923919faf6e6f",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "fpga_tutorial": {
+      "filename": "基于RK-ZYNQ7100-F的FPGA开发文档.pdf",
+      "sha256": "5f43f4f7fbf5580b0b8c4a2a2c44c0d201c035ba19f135c4afd3dff232907c35",
+      "pages": [
+        8
+      ]
+    },
+    "vitis_tutorial": {
+      "filename": "RK_7100_Vitis.pdf",
+      "sha256": "619b86945c8378852b65495b9b1d125c17b31f4916d9b21bfc072c256b946225",
+      "pages": [
+        11,
+        12,
+        14
+      ]
+    },
+    "setup_note": {
+      "filename": "关于开发环境的搭建.txt",
+      "sha256": "a3ed00bbf3334282a506c22d83c0c29a3ab563cf162bd36ac13b69f9c585d10f",
+      "pages": []
+    }
+  },
+  "tutorial_conflict": "Vitis p.14 says XC7Z020CLG484-2 in one line, but screenshot and same-page instructions select XC7Z100; manual and project confirm Z100",
+  "hardware_access": "NONE",
+  "incomplete_source_archives": [
+    "RK_XC7Z100_FPGA_DEMO.zip.baiduyun.p.downloading",
+    "RK_XC7Z100_VITIS_DEMO.zip.baiduyun.p.downloading"
+  ]
+}

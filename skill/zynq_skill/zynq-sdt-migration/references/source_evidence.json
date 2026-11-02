@@ -1,0 +1,30 @@
+{
+  "scope": "diagnostic_source_snapshot_before_the_reported_fix",
+  "note": "Hashes identify files read during diagnosis; the erroneous parameters.h is not a corrected release. Third-party driver bytes are not redistributed in this skill.",
+  "files": [
+    {
+      "role": "app_src/drivers/no_os_spi.c",
+      "sha256": "82805bc0e20b30faab70807b5699899ab296c34ceb8f66461008771a258be792"
+    },
+    {
+      "role": "app_src/drivers/no_os_spi.h",
+      "sha256": "b92103b14c7dd310cfb1a57ffeaa3341d621a0a07ee8bb1e798ad1f367a39dde"
+    },
+    {
+      "role": "app_src/drivers/xilinx_spi.c",
+      "sha256": "e31c8a7b6e6b44e30281b3690481088e536e8813bea43aed07c2f1b2cd15b360"
+    },
+    {
+      "role": "app_src/drivers/common.c",
+      "sha256": "c2ebd838d52294c95164e9a263c4d71e56a835841f653c8baeacf4f20ecc3d1c"
+    },
+    {
+      "role": "app_src/src/parameters.h",
+      "sha256": "2eb159396439b02aa21ff9831081bfe5ed288e771d3ae2544f43246feee46bec"
+    },
+    {
+      "role": "workspace/dpd_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/spips/src/xspips_sinit.c",
+      "sha256": "6ce8ae6d39d5f0df3fd5a14a42f6527d2362d43fa128ea592de9bfb2ff5ce039"
+    }
+  ]
+}

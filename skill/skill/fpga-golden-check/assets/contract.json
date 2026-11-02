@@ -1,0 +1,11 @@
+{
+  "capture_columns": ["sample_a", "sample_b"],
+  "reference_columns": ["gold_a", "gold_b"],
+  "preclip_columns": ["pre_a", "pre_b"],
+  "bits": 16,
+  "signed": true,
+  "start": 0,
+  "stop": 5,
+  "offset": 1,
+  "absolute_tolerance": 0
+}

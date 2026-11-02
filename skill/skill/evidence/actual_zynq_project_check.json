@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "board_profile": "RK-ZYNQ7100-F",
+  "part": "xc7z100ffg900-2",
+  "processor": "ps7_cortexa9_0",
+  "runtime": "standalone",
+  "hardware_operations": "NONE",
+  "scope": "XML/profile consistency only; no proof of board identity, constraints, DDR, XSA/ELF pairing or build success"
+}

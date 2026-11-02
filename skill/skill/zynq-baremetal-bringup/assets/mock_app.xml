@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic parser fixture, not a Vitis application to build. -->
+<SdkProject cpuInstance="ps7_cortexa9_0" os="standalone"/>

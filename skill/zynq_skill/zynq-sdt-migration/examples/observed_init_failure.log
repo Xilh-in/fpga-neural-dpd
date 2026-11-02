@@ -1,0 +1,5 @@
+WARNING: AD9528_initialize() issues. Possible cause: REF_CLK not connected.
+Clock PLL Charge Pump Cal event timed out in MYKONOS_waitForEvent()
+tx_lo_freq=0Hz
+rx_lo_freq=0Hz
+ERR ALIGN CAP_DONE_HIGH TIMEOUT

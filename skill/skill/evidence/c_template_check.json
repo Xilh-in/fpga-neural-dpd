@@ -1,0 +1,15 @@
+{
+  "method": "Clang 3.9 to LLVM IR + lli; simulated callbacks, no hardware",
+  "checks": {
+    "compile": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "execute": {
+      "exit_code": 0,
+      "stdout": "PORTABLE_C_CALLBACK_TESTS_PASS\n",
+      "stderr": ""
+    }
+  }
+}

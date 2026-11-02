@@ -1,0 +1,18 @@
+{
+  "fpga-bounded-io": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!\n"
+  },
+  "fpga-golden-check": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!\n"
+  },
+  "fpga-repro-handoff": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!\n"
+  },
+  "zynq-baremetal-bringup": {
+    "exit_code": 0,
+    "stdout": "Skill is valid!\n"
+  }
+}

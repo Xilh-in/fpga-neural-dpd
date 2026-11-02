@@ -1,0 +1,20 @@
+{
+  "capture_columns": [
+    "I",
+    "Q"
+  ],
+  "reference_columns": [
+    "I",
+    "Q"
+  ],
+  "preclip_columns": [
+    "pre_i",
+    "pre_q"
+  ],
+  "bits": 16,
+  "signed": true,
+  "start": 23,
+  "stop": 999,
+  "offset": 1,
+  "absolute_tolerance": 0
+}

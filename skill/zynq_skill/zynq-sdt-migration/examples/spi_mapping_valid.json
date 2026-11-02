@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "sdt": true,
+  "max_bus_id": 8,
+  "selected_bus_id": 0,
+  "lookup_argument_kind": "base_address",
+  "buses": [
+    {
+      "logical_id": 0,
+      "base_address": "0xe0006000",
+      "base_address_macro": "XPAR_XSPIPS_0_BASEADDR",
+      "input_clock_hz": 166666672
+    }
+  ]
+}

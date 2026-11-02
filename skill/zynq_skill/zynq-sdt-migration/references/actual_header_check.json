@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "declared_configuration_only",
+  "hardware_access": false,
+  "source_call_path_verified": false,
+  "sdt": true,
+  "selected_mapping": {
+    "logical_id": 0,
+    "base_address": "0xe0006000",
+    "input_clock_hz": 166666672
+  },
+  "issues": []
+}

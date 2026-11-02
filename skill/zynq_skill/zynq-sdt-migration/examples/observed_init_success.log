@@ -1,0 +1,11 @@
+platform_init status=0
+AD9528_initialize successful!
+MCS successful
+CLKPLL locked
+AD9371 ARM version 5.1.1
+PLLs locked
+Calibrations completed successfully
+FMC_AD9371 config successful!
+tx_lo_freq=800000000Hz
+rx_lo_freq=800000000Hz
+RF System Initial Successful

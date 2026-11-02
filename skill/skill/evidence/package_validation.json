@@ -1,0 +1,19 @@
+{
+  "profile": "RK-ZYNQ7100-F / Zynq-7000 / standalone",
+  "archive_sha256": "36f8f1c08e2bd6b9767655a8bf8a2c299dd883d18891c74298007cf21582af81",
+  "pynq_extension_packaged": false,
+  "manifest": {
+    "status": "PASS",
+    "exit_code": 0
+  },
+  "default": {
+    "status": "PASS",
+    "exit_code": 0
+  },
+  "dpd": {
+    "status": "PASS",
+    "exit_code": 0
+  },
+  "pynq_default": "SKIPPED (no extension files present)",
+  "links": "PASS"
+}
